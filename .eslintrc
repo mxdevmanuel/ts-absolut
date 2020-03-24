@@ -1,0 +1,24 @@
+// vi: ft=json5
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint", // agrega las reglas de prettier a eslint
+    "plugin:prettier/recommended" // agregar el plugin que integra eslint con prettier
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    // Aca puedes modificar alguna regla específica, por ejemplo:
+    "@typescript-eslint/variable-name": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/interface-name-prefix": "off"
+  }
+}
