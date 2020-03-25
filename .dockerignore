@@ -1,0 +1,7 @@
+**/.terraform
+extra
+node_modules
+npm-debug.log
+.env
+.envrc
+.git
