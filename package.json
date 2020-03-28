@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "dev": "nodemon dist/bundle.js",
+    "reload": "nodemon dist/bundle.js",
+    "dev": "concurrently \"npm:watch\" \"npm:reload\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,6 +22,7 @@
     "@types/pug": "^2.0.4",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
+    "concurrently": "^5.1.0",
     "copy-webpack-plugin": "^5.1.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
